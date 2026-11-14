@@ -1,18 +1,20 @@
-# 👋🧩 Morphe Patches template
+# Mika 2 Patches
 
-Template repository for Morphe Patches.
+A single no-op patch for Mika 2, for use with Morphe Manager.
 
-## ❓ About
+## About
 
-Patches for apps I like.
+Morphe Manager only offers to install an APK when a patch source lists a patch compatible with it. Mika 2 has no patch, so Morphe Manager shows "No patches available" and refuses to install it. This repo provides one patch, "Mika 2 installer", which changes nothing in the app, so Morphe Manager can install Mika 2 with Morphe as the installer of record.
 
-<!-- TODO: Update this about section with a brief introduction/summary about this repo and what it offers. -->
+The patch does nothing: no fingerprints, no bytecode changes, no extension, no manifest or permission changes, no installer spoofing, no signature spoofing, no network calls. The only change on install is what Morphe itself does to every app it installs: it re-signs the APK with a key it makes on the phone.
+
+Because the signature changes, a Morphe install cannot update over an existing Mika 2 install. Export first with Mika 2 v48 (Settings > My data > Backup & data), then uninstall, then install via Morphe, then import the ZIP. Whether this helps with banking apps is unproven and must be tested live.
 
 ### How to use these patches
 
-Click the button below, or manually add this repo url to Morphe Manager: https://github.com/xyz-user/xyz-patches
+Click the button below, or manually add this repo url to Morphe Manager: https://github.com/Razor573/mika2-morphe-patches
 
-<a href="https://morphe.software/add-source?github=xyz-user/xyz-patches">
+<a href="https://morphe.software/add-source?github=Razor573/mika2-morphe-patches">
   <img src=".github/assets/add-to-morphe.svg" alt="Add to Morphe" height="48">
 </a>
 
@@ -100,4 +102,4 @@ See the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation
 
 ## 📜 License
 
-UserXYZ Patches are licensed under the [GNU General Public License v3.0](LICENSE)
+Mika 2 Patches are licensed under the [GNU General Public License v3.0](LICENSE)

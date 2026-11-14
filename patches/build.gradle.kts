@@ -1,14 +1,13 @@
-group = "app.template"
+group = "app.mika2"
 
 patches {
-    // TODO: Update this section with your project details.
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
-        contact = "na"
-        website = "na"
+        name = "Mika 2 Patches"
+        description = "A single no-op patch so Morphe Manager can install Mika 2. It changes nothing in the app."
+        source = "git@github.com:Razor573/mika2-morphe-patches.git"
+        author = "Razor573"
+        contact = "https://github.com/Razor573/mika2-morphe-patches"
+        website = "https://github.com/Razor573/mika2-morphe-patches"
         license = "GPLv3"
     }
 }

@@ -1,4 +1,4 @@
-rootProject.name = "morphe-patches-template"
+rootProject.name = "mika2-morphe-patches"
 
 pluginManagement {
     repositories {
